@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wellconnect | Dashboard</title>
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <aside id="sidebar" class="d-none d-md-block">
+            <div class="d-flex align-items-center">
+                <button class="toggle-btn" type="button">
+                    <i class="lni lni-grid-alt"></i>
+                </button>
+                <div class="sidebar-logo">
+                    <a href="#"><img src="./assets/img/logo.png" alt="Brand" width="120px" height="56px"
+                            style="background: var(--white)" /></a>
+                </div>
+            </div>
+            <ul class="sidebar-nav">
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <i class="bi bi-house-gear"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <!-- <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">
+                            <i class="lni lni-agenda"></i>
+                            <span>Task</span>
+                        </a>
+                    </li> -->
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                        data-bs-target="#auth" aria-expanded="false" aria-controls="auth">
+                        <i class="lni lni-protection"></i>
+                        <span>Manage Policy</span>
+                    </a>
+                    <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse"
+                                data-bs-target="#multi-two" aria-expanded="false" aria-controls="multi-two">
+                                221100/48/2024/920
+                            </a>
+                            <ul id="multi-two" class="sidebar-dropdown list-unstyled collapse">
+                                <li class="sidebar-item">
+                                    <a href="#" class="sidebar-link">Manage Employees</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="sidebar-item">
+
+                            <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse"
+                                data-bs-target="#multi-three" aria-expanded="false" aria-controls="multi-three">
+                                4005/322860327/00/000
+                            </a>
+                            <ul id="multi-three" class="sidebar-dropdown list-unstyled collapse">
+                                <li class="sidebar-item">
+                                    <a href="#" class="sidebar-link">Manage Employees</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                </li>
+            </ul>
+            </li>
+            <li class="sidebar-item">
+                <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                    data-bs-target="#valueAdded" aria-expanded="false" aria-controls="valueAdded">
+                    <i class="bi bi-folder-plus"></i>
+                    <span>Value Added Service</span>
+                </a>
+                <ul id="valueAdded" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Services</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">Planner & Benefits</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="sidebar-item">
+                <a href="#" class="sidebar-link">
+                    <i class="bi bi-clock-history"></i>
+                    <span>Invite History</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="#" class="sidebar-link">
+                    <i class="bi bi-telephone"></i>
+                    <span>Contact Us</span>
+                </a>
+            </li>
+            </ul>
+            <div class="sidebar-footer">
+                <a href="#" class="sidebar-link">
+                    <i class="lni lni-exit"></i>
+                    <span>Logout</span>
+                </a>
+            </div>
+        </aside>
+        <div class="main">
+            <nav class="navbar navbar-expand px-4 py-2">
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/img/logo.png" alt="Brand" width="54" height="42" class="d-inline d-md-none" />
+                </a>
+                <div class="d-none d-md-inline">
+                    <p class="mb-1 fs-5 fw-bold" style="color: var(--blue)">
+                        Hello Hr,
+                    </p>
+                    <p class="mb-0 fw-bold" style="color: var(--blue)">
+                        Welcome Back !
+                    </p>
+                </div>
+                <!-- <form action="#" class="d-none d-sm-inline-block"></form> -->
+                <div class="navbar-collapse collapse">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link show" role="button_" data-bs-toggle="dropdown" aria-expanded="true">
+
+
+                                <img src="./assets/img/account.png" width="56" alt="">
+
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end show" data-bs-popper="none">
+                                <a href="#profile" class="dropdown-item ai-icon">
+                                    <i class="lni lni-user"></i>
+                                    <span class="ms-2">Profile </span>
+                                </a>
+
+                                <a href="#delete" class="dropdown-item ai-icon">
+                                    <i class="lni lni-user"></i>
+                                    <span class="ms-2">Delete My Account </span>
+                                </a>
+                                <a href="#Dashboard" class="dropdown-item ai-icon d-block d-md-none">
+                                    <i class="bi bi-house-gear"></i>
+                                    <span>Dashboard</span>
+                                </a>
+                                <a href="#Policy" class="dropdown-item ai-icon d-block d-md-none">
+                                    <i class="lni lni-protection"></i>
+                                    <span>Manage Policy</span>
+                                </a>
+                                <a href="#Addedvalue" class="dropdown-item ai-icon d-block d-md-none">
+                                    <i class="bi bi-folder-plus"></i>
+                                    <span>Value Added Service</span>
+                                </a>
+                                <a href="#History" class="dropdown-item ai-icon d-block d-md-none">
+                                    <i class="bi bi-clock-history"></i>
+                                    <span>Invite History</span>
+                                </a>
+                                <a href="#contact" class="dropdown-item ai-icon d-block d-md-none">
+                                    <i class="bi bi-telephone"></i>
+                                    <span>Contact Us</span>
+                                </a>
+                                <a href="#logout" class="dropdown-item ai-icon">
+                                    <i class="lni lni-exit"></i>
+                                    <span class="ms-2">Logout </span>
+                                </a>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <main class="content px-3 py-4">
+                <div class="container-fluid">
+                    <div class="mb-3">
+                        <div class="d-block d-md-none mb-3">
+                            <p class="mb-1 fs-5 fw-bold" style="color: var(--blue)">
+                                Hello Hr,
+                            </p>
+                            <p class="mb-0 fw-bold" style="color: var(--blue)">
+                                Welcome Back !
+                            </p>
+                        </div>
+                        <h3 class="fw-bold fs-4 mb-3" style="color: var(--primary-color)">
+                            Demo Account
+                        </h3>
+                        <div class="row mb-4">
+                            <div class="col-12 col-md-6 p-2 col-xxl-4">
+                                <div class="card border-2 rounded-4" style="border-color: var(--blue);background-color: #f8f8f8 !important; border: 0 !important;   box-shadow: 4px 6px 8px  #523f6914; background: url(./assets/img/mask.png);
+                                background-size: 100%;
+                                background-repeat: no-repeat;
+                                max-width: 100%;
+                                height: auto;">
+                                    <div class="card-body p-4">
+                                        <div
+                                            class="d-flex flex-column-reverse align-items-center gap-3 flex-sm-row justify-content-between mb-3">
+                                            <div class="insc-desc">
+                                                <h5 class="mb-2 fw-semibold" style="
+                                                            color: var(--secondary-color);
+                                                        ">
+                                                    Group Health Insurance Floater
+                                                </h5>
+                                                <div class="mb-2 fw-semibold row align-items-center"
+                                                    style="color: var(--blue)">
+                                                    <h6 class="col-5 mb-0 fw-bold">
+                                                        Policy Number
+                                                    </h6>
+                                                    <p class="col-7 fs-6 mb-0 text-wrap">
+                                                        :221100/48/2024/920
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="ins-img border-0 align-items-center">
+                                                <img src="./assets/img/Birla_Sun_Life_Insurance_Co_Ltd_.jpg" alt=""
+                                                    class="d-block w-100 h-auto" />
+                                            </div>
+                                        </div>
+                                        <div class="info">
+                                            <div class="row text-wrap mb-2 align-items-center mb-2">
+                                                <h6 class="mb-0 fw-bold col-5 col-sm-4">
+                                                    TPA Name
+                                                </h6>
+                                                <p class="fs-6 mb-0 col-7 col-sm-8">
+                                                    : Vipul Medcorp Insurance TPA
+                                                    Private Limited
+                                                </p>
+                                            </div>
+
+                                            <div class="row text-wrap mb-2 align-items-center mb-2">
+                                                <h6 class="mb-0 fw-bold col-5 col-sm-4">
+                                                    Date From
+                                                </h6>
+                                                <p class="fs-6 mb-0 col-7 col-sm-8">
+                                                    : 12-02-2024
+                                                </p>
+                                            </div>
+                                            <div class="row text-wrap mb-2 align-items-center mb-2">
+                                                <h6 class="mb-0 fw-bold col-5 col-sm-4">
+                                                    Valid Till
+                                                </h6>
+                                                <p class="fs-6 mb-0 col-7 col-sm-8">
+                                                    : 12-02-2025
+                                                </p>
+                                            </div>
+                                            <div class="row text-wrap mb-2 align-items-center mb-2">
+                                                <h6 class="mb-0 fw-bold col-5 col-sm-4">
+                                                    Sum Insured(s)
+                                                </h6>
+                                                <p class="fs-6 mb-0 col-7 col-sm-8">
+                                                    : 200000
+                                                </p>
+                                            </div>
+                                            <div class="row text-wrap mb-2 align-items-center mb-2">
+                                                <h6 class="mb-0 fw-bold col-5 col-sm-4">
+                                                    CD Balance
+                                                </h6>
+                                                <p class="fs-6 mb-0 col-7 col-sm-8">
+                                                    : 60.21909753
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 p-2 col-xxl-4">
+                                <div class="card border-2 rounded-4" style="border-color: var(--blue);background-color: #f8f8f8 !important; border: 0 !important;    box-shadow: 4px 6px 8px  #523f6914; background: url(./assets/img/mask.png);
+                                background-size: 100%;
+                                background-repeat: no-repeat;
+                                max-width: 100%;
+                                height: auto;">
+                                    <div class="card-body p-4">
+                                        <div
+                                            class="d-flex flex-column-reverse align-items-center gap-3 flex-sm-row justify-content-between mb-3">
+                                            <div class="insc-desc">
+                                                <h5 class="mb-2 fw-semibold" style="
+                                                            color: var(--secondary-color);
+                                                        ">
+                                                    Group Health Insurance Floater
+                                                </h5>
+                                                <div class="mb-2 fw-semibold row align-items-center"
+                                                    style="color: var(--blue)">
+                                                    <h6 class="col-5 mb-0 fw-bold">
+                                                        Policy Number
+                                                    </h6>
+                                                    <p class="fs-6 mb-0 text-wrap col-7">
+                                                        :221100/48/2024/920
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="ins-img border-0 align-items-center">
+                                                <img src="./assets/img/Care_Health_Insurance_Ltd(formerly_known_as_Religare_Health_Insurance_Co_Ltd).png"
+                                                    alt="" class="d-block w-100 h-auto" />
+                                            </div>
+                                        </div>
+                                        <div class="info">
+                                            <div class="row text-wrap mb-2 align-items-center mb-2">
+                                                <h6 class="mb-0 fw-bold col-5 col-sm-4">
+                                                    TPA Name
+                                                </h6>
+                                                <p class="fs-6 mb-0 col-7 col-sm-8">
+                                                    : Vipul Medcorp Insurance TPA
+                                                    Private Limited
+                                                </p>
+                                            </div>
+
+                                            <div class="row text-wrap mb-2 align-items-center mb-2">
+                                                <h6 class="mb-0 fw-bold col-5 col-sm-4">
+                                                    Date From
+                                                </h6>
+                                                <p class="fs-6 mb-0 col-7 col-sm-8">
+                                                    : 12-02-2024
+                                                </p>
+                                            </div>
+                                            <div class="row text-wrap mb-2 align-items-center mb-2">
+                                                <h6 class="mb-0 fw-bold col-5 col-sm-4">
+                                                    Valid Till
+                                                </h6>
+                                                <p class="fs-6 mb-0 col-7 col-sm-8">
+                                                    : 12-02-2025
+                                                </p>
+                                            </div>
+                                            <div class="row text-wrap mb-2 align-items-center mb-2">
+                                                <h6 class="mb-0 fw-bold col-5 col-sm-4">
+                                                    Sum Insured(s)
+                                                </h6>
+                                                <p class="fs-6 mb-0 col-7 col-sm-8">
+                                                    : 200000
+                                                </p>
+                                            </div>
+                                            <div class="row text-wrap mb-2 align-items-center mb-2">
+                                                <h6 class="mb-0 fw-bold col-5 col-sm-4">
+                                                    CD Balance
+                                                </h6>
+                                                <p class="fs-6 mb-0 col-7 col-sm-8">
+                                                    : 60.21909753
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 p-2 col-xxl-4">
+                                <div class="card border-2 rounded-4" style="border-color: var(--blue);background-color: #f8f8f8 !important; border: 0 !important;    box-shadow: 4px 6px 8px  #523f6914; background: url(./assets/img/mask.png);
+                                background-size: 100%;
+                                background-repeat: no-repeat;
+                                max-width: 100%;
+                                height: auto;">
+                                    <div class="card-body p-4">
+                                        <div
+                                            class="d-flex flex-column-reverse align-items-center gap-3 flex-sm-row justify-content-between mb-3">
+                                            <div class="insc-desc">
+                                                <h5 class="mb-2 fw-semibold" style="
+                                                            color: var(--secondary-color);
+                                                        ">
+                                                    Group Health Insurance Floater
+                                                </h5>
+                                                <div class="mb-2 fw-semibold row align-items-center"
+                                                    style="color: var(--blue)">
+                                                    <h6 class="col-5 mb-0 fw-bold">
+                                                        Policy Number
+                                                    </h6>
+                                                    <p class="fs-6 mb-0 text-wrap col-7">
+                                                        :221100/48/2024/920
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="ins-img border-0 align-items-center">
+                                                <img src="./assets/img/Birla_Sun_Life_Insurance_Co_Ltd_.jpg" alt=""
+                                                    class="d-block w-100 h-auto" />
+                                            </div>
+                                        </div>
+                                        <div class="info">
+                                            <div class="row text-wrap mb-2 align-items-center mb-2">
+                                                <h6 class="mb-0 fw-bold col-5 col-sm-4">
+                                                    TPA Name
+                                                </h6>
+                                                <p class="fs-6 mb-0 col-7 col-sm-8">
+                                                    : Vipul Medcorp Insurance TPA
+                                                    Private Limited
+                                                </p>
+                                            </div>
+
+                                            <div class="row text-wrap mb-2 align-items-center mb-2">
+                                                <h6 class="mb-0 fw-bold col-5 col-sm-4">
+                                                    Date from
+                                                </h6>
+                                                <p class="fs-6 mb-0 col-7 col-sm-8">
+                                                    : 12-02-2024
+                                                </p>
+                                            </div>
+                                            <div class="row text-wrap mb-2 align-items-center mb-2">
+                                                <h6 class="mb-0 fw-bold col-5 col-sm-4">
+                                                    Valid Till
+                                                </h6>
+                                                <p class="fs-6 mb-0 col-7 col-sm-8">
+                                                    : 12-02-2025
+                                                </p>
+                                            </div>
+                                            <div class="row text-wrap mb-2 align-items-center mb-2">
+                                                <h6 class="mb-0 fw-bold col-5 col-sm-4">
+                                                    Sum Insured(s)
+                                                </h6>
+                                                <p class="fs-6 mb-0 col-7 col-sm-8">
+                                                    : 200000
+                                                </p>
+                                            </div>
+                                            <div class="row text-wrap mb-2 align-items-center mb-2">
+                                                <h6 class="mb-0 fw-bold col-5 col-sm-4">
+                                                    CD Balance
+                                                </h6>
+                                                <p class="fs-6 mb-0 col-7 col-sm-8">
+                                                    : 60.21909753
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <h3 class="fw-bold fs-4 my-3">Avg. Agent Earnings</h3> -->
+                        <div class="row">
+                            <form>
+                                <div class="col-12">
+                                    <div class="card rounded-3" style="border: 2px solid var(--blue)">
+                                        <div class="card-header d-block d-sm-flex py-3 justify-content-between" style="
+                                                    border-bottom: 2px solid var(--blue);
+                                                ">
+                                            <h6 class="card-title fs-3 fw-bold mb-3 mb-sm-0"
+                                                style="color: var(--secondary-color)">
+                                                Recent Updates
+                                            </h6>
+
+                                            <div class="database-btn-group d-flex gap-2 float-end">
+                                                <a href="#"
+                                                    class="btn rounded-pill fs-12 fw-bold fh-base mb-0 bg-success"
+                                                    style="
+                                                            color: var(--white);
+                                                            --bs-btn-padding-y: 0.35rem;
+                                                            --bs-btn-padding-x: 0.5rem;
+                                                        ">Approve</a>
+                                                <button type="button"
+                                                    class="btn btn-default rounded-pill fs-12 fw-bold mb-0" disabled
+                                                    style="
+                                                            --bs-btn-padding-y: 0.35rem;
+                                                            --bs-btn-padding-x: 0.5rem;
+                                                        ">
+                                                    Reject
+                                                </button>
+                                                <a href="#" class="btn rounded-pill fs-12 fw-bold mb-0" style="
+                                                            color: var(--white);
+
+                                                            background-color: var(
+                                                                --primary-color
+                                                            );
+                                                            --bs-btn-padding-y: 0.35rem;
+                                                            --bs-btn-padding-x: 0.5rem;
+                                                        ">Download</a>
+                                            </div>
+                                        </div>
+                                        <div class="card-body" style="padding: 8px 14px">
+                                            <div class="table-responsive">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>
+                                                                <input type="checkbox" value="all" id="selectall" />
+                                                            </th>
+                                                            <th>Employee Id</th>
+                                                            <th>Policy No.</th>
+                                                            <th>Employee</th>
+                                                            <th>Dependant</th>
+                                                            <th>Relation & Gender</th>
+                                                            <th>Mode</th>
+                                                            <th>Status</th>
+                                                            <th>Reason</th>
+                                                            <th>Doc Upload</th>
+                                                            <th>Updated At</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <input type="checkbox" class="checkboxall" />
+                                                            </td>
+                                                            <td>TZ/2024/671</td>
+                                                            <td>
+                                                                221100/48/2024/920
+                                                            </td>
+                                                            <td>Akshat Jain</td>
+                                                            <td>Akshat Jain</td>
+                                                            <td>Self / M</td>
+                                                            <td>New Addition</td>
+                                                            <td>
+                                                                <span
+                                                                    class="badge rounded-pill text-bg-success text-white">
+                                                                    Hr Approved
+                                                                </span>
+                                                            </td>
+                                                            <td>Addition</td>
+                                                            <td>N/A</td>
+                                                            <td>03-04-2024</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>
+                                                                <input type="checkbox" class="checkboxall" />
+                                                            </td>
+                                                            <td>TZ/2024/673</td>
+                                                            <td>
+                                                                221100/48/2024/920
+                                                            </td>
+                                                            <td>Megha Saxena</td>
+                                                            <td>Megha Saxena</td>
+                                                            <td>Self / F</td>
+                                                            <td>New Addition</td>
+                                                            <td>
+                                                                <span
+                                                                    class="badge rounded-pill text-bg-danger text-white">
+                                                                    Hr Approval
+                                                                    rejected</span>
+                                                            </td>
+                                                            <td>Addition</td>
+                                                            <td>N/A</td>
+                                                            <td>03-04-2024</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>
+                                                                <input type="checkbox" class="did_class" />
+                                                            </td>
+                                                            <td>RB10LA</td>
+                                                            <td>
+                                                                221100/48/2024/920
+                                                            </td>
+                                                            <td>Laxmi</td>
+                                                            <td>Ujjwal</td>
+                                                            <td>Kid0 / M</td>
+                                                            <td>New Addition</td>
+
+                                                            <td>
+                                                                <span class="badge rounded-pill text-bg-info">
+                                                                    Hr Approval
+                                                                    Pending</span>
+                                                            </td>
+                                                            <td></td>
+                                                            <td>N/A</td>
+                                                            <td>30-11-0001</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <input type="checkbox" class="checkboxall" />
+                                                            </td>
+                                                            <td>RB10LA</td>
+                                                            <td>
+                                                                221100/48/2024/920
+                                                            </td>
+                                                            <td>Laxmi</td>
+                                                            <td>Laxmi Maam Spouse</td>
+                                                            <td>Spouse / M</td>
+                                                            <td>New Addition</td>
+
+                                                            <td>
+                                                                <span class="badge rounded-pill text-bg-info">
+                                                                    Hr Approval
+                                                                    Pending</span>
+                                                            </td>
+                                                            <td></td>
+                                                            <td>N/A</td>
+                                                            <td>30-11-0001</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <input type="checkbox" class="checkboxall" />
+                                                            </td>
+                                                            <td>RB10LA</td>
+                                                            <td>
+                                                                221100/48/2024/920
+                                                            </td>
+                                                            <td>Laxmi</td>
+                                                            <td>laxmi maam mother</td>
+                                                            <td>Mother / F</td>
+                                                            <td>New Addition</td>
+
+                                                            <td>
+                                                                <span class="badge rounded-pill text-bg-info">
+                                                                    Hr Approval
+                                                                    Pending</span>
+                                                            </td>
+                                                            <td></td>
+                                                            <td>N/A</td>
+                                                            <td>30-11-0001</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <input type="checkbox" class="did_class checkboxall" />
+                                                            </td>
+                                                            <td>RB10LA</td>
+                                                            <td>
+                                                                221100/48/2024/920
+                                                            </td>
+                                                            <td>Laxmi</td>
+                                                            <td>laxmi maam father</td>
+                                                            <td>Father / M</td>
+                                                            <td>New Addition</td>
+
+                                                            <td>
+                                                                <span class="badge rounded-pill text-bg-info">
+                                                                    Hr Approval
+                                                                    Pending</span>
+                                                            </td>
+                                                            <td></td>
+                                                            <td>N/A</td>
+                                                            <td>30-11-0001</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer class="footer py-4 bg-body-tertiary">
+                <div class="container text-center">
+                    <small class="fst-italic" style="color: var(--black)">
+                        All &#169; Copyrights are Reserved. |
+                        <a href="https://riskbirbal.com/" style="color: var(--primary-color)">Riskbirbal Insurance
+                            Brokers and Pvt. Ltd.</a>
+                    </small>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="./assets/js/index.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('#sidebar').on('click', function () {
+                    $('.top-navbar .logo').toggle();
+                });
+            });
+        </script> -->
+</body>
+
+</html>
